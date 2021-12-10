@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4ECEC"
+    android:backgroundTint="#191818"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:backgroundTint="#00BCD4"
+        android:ems="14"
+        android:foregroundTint="#862121"
+        android:hint="Name"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:shadowColor="#F31F1F"
+        android:textColor="#AB0A0A"
+        android:textColorHint="#00BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonchoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="343dp"
+        android:text="Chooser"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

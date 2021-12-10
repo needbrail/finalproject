@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#000000"
+    tools:context=".option_picker">
+
+    <TextView
+        android:id="@+id/textChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="148dp"
+        android:text="What is Each Choice's Main Color"
+        android:textAlignment="center"
+        android:textColor="#00BCD4"
+        android:textColorHighlight="#191818"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/RadioGroupChooseOption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroupChooseOption"
+        android:layout_width="411dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textChoice">
+
+        <RadioButton
+            android:id="@+id/radioGrass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grass"
+            android:textColor="#00BCD4" />
+
+        <RadioButton
+            android:id="@+id/radioApples"
+            android:layout_width="404dp"
+            android:layout_height="51dp"
+            android:text="Apples"
+            android:textColor="#00BCD4" />
+
+        <RadioButton
+            android:id="@+id/radioSky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sky"
+            android:textColor="#00BCD4" />
+
+        <RadioButton
+            android:id="@+id/radioSnow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Snow"
+            android:textColor="#00BCD4" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
